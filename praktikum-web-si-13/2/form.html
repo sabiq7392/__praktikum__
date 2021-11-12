@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum SI - 13</title>
+</head>
+<body>
+  <form action="thankyou.html">
+    <h1>Black Goose | Pizza on Demand</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam perferendis eum dolorem optio, iusto nesciunt nostrum rerum aliquam qui dignissimos nam sequi tempora obcaecati beatae officia eligendi, illum quibusdam.</p>
+    
+    <fieldset> <!-- Untuk Mengelompokan -->
+      <legend>Your Information</legend> <!-- Untuk memberi judul fieldset -->
+      
+      <label for="input-name">Name:</label> <!-- adalah judul dari input -->
+      <input id="input-name" type="text">
+
+      <br>
+
+      <label for="input-address">Address: </label>
+      <input id="input-address" type="text">
+
+      <br>
+
+      <label for="input-telephone-number">Telephone Number:</label>
+      <input type="number">
+
+      <br>
+
+      <label for="input-email">Email:</label>
+      <input placeholder="masukin email lu" id="input-email" type="email">
+
+      <br>
+
+      <label for="delivery">Delivery Instruction:</label>
+      <br>
+      <textarea placeholder="No more than 400 characters long" id="delivery" cols="30" rows="10" maxlength="400"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Design Your Dream Pizza</b></legend>
+      <p>Pizza Specs</p>
+
+      <fieldset>
+        <legend>Crust (Choose One)</legend>
+
+        <input id="classic-white" name="crust" type="radio">
+        <label for="classic-white">Classic White</label>
+        <br>
+        <input id="multigrain" name="crust" type="radio">
+        <label for="multigrain">Multigrain</label>
+        <br>
+        <input id="cheese-stuffed-crust" name="crust" type="radio">
+        <label for="cheese-stuffed-crust">Cheese-stuffed crust</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Toppings (Choose as many as you want):</legend>
+
+        <input id="red-sauce" type="checkbox" checked>
+        <label for="red-sauce">Red Sauce</label>
+        <br>
+        <input id="white-sauce" type="checkbox">
+        <label for="white-sauce">White Sauce</label>
+        <br>
+        <input id="mozarella-cheese" type="checkbox">
+        <label for="mozarella-cheese">Mozarella Cheese</label>
+      </fieldset>
+    </fieldset>
+
+    <fieldset>
+      <legend>Number</legend>
+      <label for="how-many-pizza">How Many Pizzas</label>
+      <select id="how-many-pizza">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </fieldset>
+
+    <input type="submit" value="Bring Me a Pizza">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>

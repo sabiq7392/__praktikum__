@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  background-color: black;
+}
+
+.container-profile {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambar,
+.profile-name,
+.categories {
+  width: 150px;
+  height: 300px;
+  border: 1px solid red;
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+.container {
+  width: 800px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  display: flex;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  display: flex;
+}
+
+.konten {
+  width: 75px; 
+  height: 75px;
+  border: 1px solid black;
+}
+
