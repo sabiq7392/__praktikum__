@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+p, body {
+  margin: 0;
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+
+  padding-left: 30px;
+  padding-right: 50px;
+
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.box-1 {
+  border: 2px solid red;
+  float: left;
+}
+
+.box-2 {
+  border: 2px solid blue;
+  float: right;
+}
+
+.container-test {
+  width: 100vw;
+  height: 500px;
+  background-color: yellow;
+}
+
+
+.container {
+  width: 80vw;
+  height: 500px;
+  background-color: aquamarine;
+  margin: 100px auto;
+}
+
+.square {
+  width: 300px;
+  height: 200px;
+}
+
+.square-1 {
+  background-color: brown;
+  top: 100px;
+  left: 200px;
+}
+
+.square-2 {
+  background-color: cornflowerblue;
+}
+
+.square-3 {
+  background-color: red;
+  z-index: 1;
+  left: 100px;
+}
+
+.square-4 {
+  background-color: blue;
+  z-index: 2;
+  right: 0;
+}
+
+.square-5 {
+  background-color: coral;
+  z-index: 0;
+}
+
+.POP_UP {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-fixed {
+  position: fixed;
+}

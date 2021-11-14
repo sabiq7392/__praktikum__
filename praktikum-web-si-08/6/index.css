@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.box {
+  width: 400px;
+  height: 300px;
+  border: 2px solid red;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.box-1 {
+  float: left;
+}
+
+.box-2 {
+  float: right;
+}
+
+p {
+  margin: 0;
+}
+
+
+.container-relative {
+  width: 80vw;
+  height: 600px;
+  background-color: aquamarine;
+  margin: 100px auto;
+}
+.square {
+  width: 300px;
+  height: 300px;
+}
+
+.square-1 {
+  background-color: yellow;
+  position: relative;
+  left: 150px;
+  bottom: -50px;
+  z-index: 5;
+}
+
+.square-2 {
+  background-color: blue;
+}
+
+.container-absolute {
+  width: 80vw;
+  height: 600px;
+  background-color: bisque;
+  margin: 100px auto;
+  position: relative;
+}
+
+
+.square-3 {
+  background-color: green;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+}
+
+.square-4 {
+  background-color: yellow;
+  position: absolute;
+  z-index: 5;
+}
+
+.square-5 {
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+}
+
+.container-fixed {
+  width: 100vw;
+  height: 50px;
+  background-color: tomato;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
