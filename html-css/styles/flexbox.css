@@ -1,0 +1,203 @@
+/*
+FLEX-WRAP: WRAP;
+untuk membungkus elemen agar tetep pada
+containernya
+
+berketergantungan dengan width/min-width
+
+FLEX-GROW: 1;
+otomatis mengisi ruang kosong container flex
+*/
+/* .container-flex {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.flex-item {
+  flex-grow: 1;
+  
+  height: 300px;
+  min-width: 300px; 
+} */
+
+/* ============================= */
+/* ============================= */
+
+/* 
+ALIGN-ITEMS: BASELINE;
+posisi vertical mengikuti font terbesar 
+*/
+/* .container-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex-item {
+  flex-grow: 1;
+  height: 300px;
+}
+
+.flex-item:nth-child(2) {
+  font-size: 150px
+} */
+
+/* ============================= */
+/* ============================= */
+
+/* 
+ALIGN-SELF 
+menghilangkan default align-items: stretch;
+*/
+/* .container-flex {
+  display: flex;
+  height: 500px;
+}
+
+.flex-item {
+  flex-grow: 1;
+}
+
+.flex-item:nth-child(2) {
+  align-self: center;
+  height: 300px;
+} */
+
+
+/*
+ALIGN-CONTENT
+hampir sama dengan align items, tapi 
+value lebih banyak
+
+Berketergantungan dengan flex-wrap
+*/
+/* .container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 1000px;
+  border: 1px solid red;
+}
+
+.flex-item {
+  width: 300px;
+  height: 300px;
+} */
+
+/* ============================= */
+/* ============================= */
+
+/*
+FLEX-GROW
+
+otomatis mengisi/membagi semua ruang di container flex.
+container tidak akan mempunyai ruang kosong
+*/
+/* .container-flex {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  width: 300px;
+} */
+
+/* .flex-item:nth-child(3) {
+  flex-grow: 3;
+} */
+/* .flex-item:nth-child(1),
+.flex-item:nth-child(3) {
+  flex-grow: 1;
+}
+
+.flex-item:nth-child(2) {
+  flex-grow: 1;
+} */
+
+
+/* ============================= */
+/* ============================= */
+
+/*
+FLEX-SHRINK
+
+kebalikan dari grow, untuk memperkecil
+berketergantungan dengan flex basis
+*/
+/* .container-flex {
+  display: flex;
+  height: 500px;
+  width: 500px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+.flex-item:nth-child(1),
+.flex-item:nth-child(3) {
+  flex-shrink: 1;
+}
+
+.flex-item:nth-child(2) {
+  flex-shrink: 1;
+} */
+
+/* ============================= */
+/* ============================= */
+
+/*
+FLEX-BASIS
+
+hampir sama seperti flex-grow, tapi
+bisa menggunakan satuan unit, sepert px % dll
+*/
+/* .container-flex {
+  display: flex;
+  height: 500px;
+}
+
+.flex-item {
+  flex-basis: 100px;
+}
+
+.flex-item:nth-child(2) {
+  flex-basis: 300px;
+} */
+
+/* .container-flex {
+  display: flex;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  align-items: baseline;
+  height: 700px;
+}
+
+.flex-item {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+} */
+
+
+.flex-item:nth-child(1) {
+  background-color: red;
+}
+
+.flex-item:nth-child(2) {
+  background-color: blue;
+}
+
+.flex-item:nth-child(3) {
+  background-color: green;
+}
+
+.flex-item:nth-child(4) {
+  background-color: yellow;
+}
+
+.flex-item:nth-child(5) {
+  background-color: turquoise;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Motor</title>
+</head>
+<body> 
+  <button onclick="gas()">Motor</button>
+  <h4 id="kecepatan">Kecepatan: 20km</h4>
+
+  <br><br>
+
+  <button  onclick="klakson()">klakson</button>
+  <h5 id="klakson">........</h5>
+
+  <script>
+    function gas() {
+      // menambahkan kecepatan
+      document.getElementById('kecepatan').innerHTML = 'Kecepatan: 80km';
+    }
+
+    function klakson() {
+      let klakson = document.getElementById('klakson');
+
+      klakson.innerHTML = 'TIN TIN TIN';
+      klakson.style.backgroundColor = 'yellow';
+    }
+
+    let restoran = {
+      nama: 'warteg',
+      pemilik: 'sabiq',
+      alamat: 'citayam'
+    };
+
+    console.log(restoran.pemilik); // sabiq
+  </script>
+</body>
+</html>

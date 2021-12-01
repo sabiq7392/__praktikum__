@@ -1,0 +1,9 @@
+table {
+  width: 100%;
+}
+
+.table-item {
+  border: 2px solid black;
+  /* default */
+  vertical-align: middle;
+}  

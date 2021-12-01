@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor</title>
+</head>
+<body>
+  
+  <h1>Motor</h1>
+  <button onclick="klakson()">Klakson</button>
+  <p id="bunyiKlakson">......</p>
+
+  <script>
+    function klakson() {
+      document.getElementById('bunyiKlakson').innerHTML = 'tin tin tin';
+      document.getElementById('bunyiKlakson').style.backgroundColor = 'green';
+      document.getElementById('bunyiKlakson').style.fontWeight = 'bold';
+    }
+  </script>
+</body>
+</html>

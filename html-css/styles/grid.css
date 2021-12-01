@@ -1,0 +1,57 @@
+/* 
+mengatur kolom dan baris menggunakan
+grid-template-columns & rows
+*/
+/* .container-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 1fr 1fr; 
+}
+
+.grid-item {
+  width: 100%;
+} */
+
+/* .container-grid {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  width: 100%;
+} */
+
+/* ============================= */
+/* ============================= */
+
+.container-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  'empat tiga'
+  'dua satu'
+  ;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.grid-item:nth-child(1) {
+  grid-area: satu;
+}
+
+.grid-item:nth-child(2) {
+  grid-area: dua;
+}
+
+.grid-item:nth-child(3) {
+  grid-area: tiga;
+}
+
+.grid-item:nth-child(4) {
+  grid-area: empat;
+}
