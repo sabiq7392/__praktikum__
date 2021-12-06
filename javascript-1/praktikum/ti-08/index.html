@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <h1 id="namaMotor"></h1>
+
+  <button onclick="onderdilKlakson()">Klakson</button>
+  <p id="bunyiKlakson">..........</p>
+
+  <button onclick="onderdilGas()">Gas</button>
+  <p id="kecepatan">Kecepatan 20Km</p> <!--- Kecepatan 80Km-->
+
+  <button onclick="onderdilSenKanan()">Sen Kanan</button> 
+  <div id="arahSen" style="color: green;">Sen Kiri</div>  <!--- Sen Kanan, Warna Kuning -->
+  <script>
+
+    document.getElementById('namaMotor').innerHTML = 'Honda';
+
+    // ===================================================
+
+    function onderdilKlakson() {
+      let bunyiKlakson = document.getElementById('bunyiKlakson');
+
+      bunyiKlakson.innerHTML = 'Tin Tin Tin';
+      bunyiKlakson.style.color = 'red';
+    }
+
+    // ===================================================
+
+    function onderdilGas() {
+      document.getElementById('kecepatan').innerHTML = 'Kecepatan 80Km';
+    }
+
+    // ===================================================
+
+    function onderdilSenKanan() {
+      let arahSen = document.getElementById('arahSen');
+
+      arahSen.innerHTML = `
+        <div>
+          <img src="https://id-live-05.slatic.net/p/56c7ffb62508f95e07cff6394bbbadc1.jpg_720x720q80.jpg_.webp">  
+        </div>
+      `;
+      arahSen.style.color = 'red';
+    }
+
+  </script>
+</body>
+</html>

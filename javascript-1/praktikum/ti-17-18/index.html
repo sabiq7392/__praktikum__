@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor</title>
+</head>
+<body>
+  
+  <h1 id="namaMotor"></h1>
+
+  <button onclick="onderdilKlakson()">Klakson</button>
+  <p id="bunyiKlakson">...............</p>
+
+  <button onclick="gambarMotor()">Print Gambar Motor</button>
+  <div id="gambarMotor"></div>
+
+  <script>
+    document.getElementById('namaMotor').innerHTML = 'Honda';
+
+    function onderdilKlakson() {
+      let bunyiKlakson = document.getElementById('bunyiKlakson');
+
+      bunyiKlakson.innerHTML = 'Tin Tin Tin';
+      bunyiKlakson.style.color = 'red';
+      bunyiKlakson.style.backgroundColor = 'black';
+    }
+
+    function gambarMotor() {
+      document.getElementById('gambarMotor').innerHTML = '<img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/uploads/product/thumbnail/adv-150-2022-27052021-094028.png">';
+    }
+
+    // const gambarMotor = () => document.getElementById('gambarMotor').innerHTML = '<img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/uploads/product/thumbnail/adv-150-2022-27052021-094028.png">';
+  </script>
+</body>
+</html>
