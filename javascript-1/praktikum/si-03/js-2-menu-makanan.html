@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan</title>
+</head>
+<body>
+
+  <h1>Masukkan Menu Makanan</h1>
+  <input id="buatMenuMakanan" type="text">
+  <button onclick="buatMenuMakanan()">Buat</button>
+  <br>
+  <ul id="menuMakanan"></ul>
+
+  <br>
+  <!-------------------------->
+
+  <input id="cetakNama" type="text">
+  <input id="cetakJurusan" type="text">
+  <input id="cetakNim" type="text">
+  <button onclick="cetakDataMahasiswa()">Cetak Mahasiswa</button>
+  <br>
+  <ul id="dataMahasiswa"></ul>
+
+  <br>
+  <!-------------------------->
+
+  <input id="bilanganPertama" type="number" onchange="pertambahan()">
+  <br>
+  +
+  <br>
+  <input id="bilanganKedua" type="number" onchange="pertambahan()">
+  <br>
+  =
+  <br>
+  <div id="hasilPertambahan"></div>
+
+  <script>
+    function buatMenuMakanan() {
+      const nilaiInputMenuMakanan = document.getElementById('buatMenuMakanan').value;
+      document.getElementById('menuMakanan').innerHTML += `<li>${nilaiInputMenuMakanan}</li>`;
+    }
+
+    // ======================================
+
+    function cetakDataMahasiswa() {
+      const nama = document.getElementById('cetakNama').value; 
+      const jurusan = document.getElementById('cetakJurusan').value;
+      const nim = document.getElementById('cetakNim').value;
+      document.getElementById('dataMahasiswa').innerHTML += `<li>${nama} ${jurusan} ${nim }</li>`
+    }    
+
+    // ======================================
+
+    function pertambahan() {
+      const bilanganPertama = document.getElementById('bilanganPertama').value;
+      const bilanganKedua = document.getElementById('bilanganKedua').value;
+      const hasilPertambahan = document.getElementById('hasilPertambahan');
+
+      hasilPertambahan.innerHTML = Number(bilanganPertama) + Number(bilanganKedua);
+    }
+  </script>
+</body>
+</html>

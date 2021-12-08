@@ -11,33 +11,26 @@
 </head>
 <body>
   
-  <h1 id="kendaraan"></h1>
-  <button id="klakson" onclick="onderdilKlakson()"></button> <!-- Klakson -->
-  <p id="bunyi"></p> <!--- ......... -->
+  <h1 id="kendaraan">Motor</h1>
+  <button id="klakson" onclick="onderdilKlakson()">Klakson</button>
+  <p id="bunyi">......</p>
 
-  <button id="gas" onclick="onderdilGas()"></button> <!--- gas -->
+  <button id="gas" onclick="onderdilGas()">Gas</button> <!--- gas -->
   <p id="kecepatan">Kecepatan: 20 km</p> <!--- Kecepatan: 80 km -->
 
   <script>
-    document.getElementById('kendaraan').innerHTML = 'Motor';
-    document.getElementById('klakson').innerHTML = 'Klakson';
-    document.getElementById('bunyi').innerHTML = '..........';
-
     function onderdilKlakson() {
-      var bunyi = document.getElementById('bunyi');
+      const bunyi = document.getElementById('bunyi');
 
       bunyi.innerHTML = 'tin tin tin';
       bunyi.style.backgroundColor = 'green';
     }
 
     // ====================== 
-
-    var klakson = document.getElementById('gas');
-    klakson.innerHTML = 'gas';
-
+    
     function onderdilGas() {
-      var kecepatan = document.getElementById('kecepatan');
-
+      const kecepatan = document.getElementById('kecepatan');
+      
       kecepatan.innerHTML = 'Kecepatan: 80km';
     }
   </script>

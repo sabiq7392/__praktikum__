@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input id="bil-1" type="number" value="0" onchange="hitung()">
+  <div id="hasil"></div>
+
+
+  <script>
+    function hitung() {
+      let bil1 = document.getElementById('bil-1');
+      let bil2 = document.getElementById('bil-2');
+
+      document.getElementById('hasil').innerHTML = Number(bil1.value) + Number(bil2.value);
+      document.getElementById('hasil').innerHTML = Number(bil1.value) * 9915;
+    }
+  </script>
+</body>
+</html>
