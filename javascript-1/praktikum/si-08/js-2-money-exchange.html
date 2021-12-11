@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- 
+  <select name="" id="money" onchange="valas()">
+    <option value="dollar-us">Dollar US</option>
+    <option value="dollar-singapore">Dollar Singapore</option>
+  </select>
+
+  <p id="hasil"></p> -->
+
+  <p id="cetakKata"></p>
+  <script>
+    // function valas() {
+    //   let money = document.getElementById('money');
+    //   let hasil = document.getElementById('hasil');
+        
+    //   if (money.value == 'dollar-us') {
+    //     hasil.innerHTML = '<img src="data:image/png;base64,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">';
+    //   } else if (money.value == 'dollar-singapore') {
+    //     hasil.innerHTML = '<img src="https://awsimages.detik.net.id/community/media/visual/2015/12/31/3fb69212-ac92-48d2-adf4-67179bd99ae1_169.jpg?w=700&q=90">';
+    //   }
+    // }
+
+
+    let a = 21;
+    let b = 2;
+
+    console.log(b * a);
+  </script>
+</body>
+</html>

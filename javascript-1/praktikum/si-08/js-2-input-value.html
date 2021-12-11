@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengambil Nilai Input</title>
+</head>
+<body>
+  
+
+  <input id="bilangan-pertama" type="number">
+  <br>
+  +
+  <br>
+  <input id="bilangan-kedua" type="number">
+  <br>
+  <br>
+  <button onclick="cetakHasil()">cetak hasil</button>
+  <br>
+  <br>
+  <input id="hasil" type="number">
+  
+  <script>
+    function cetakHasil() {
+      let bilanganPertama = document.getElementById('bilangan-pertama');
+      let bilanganKedua = document.getElementById('bilangan-kedua');
+      let hasil = document.getElementById('hasil');
+
+      hasil.value = Number(bilanganPertama.value) + Number(bilanganKedua.value);
+    }
+  </script>
+</body>
+</html>
